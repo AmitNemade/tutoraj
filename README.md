@@ -1,0 +1,2 @@
+# tutoraj
+Preinternship task
