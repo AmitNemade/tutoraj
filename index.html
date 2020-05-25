@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>PortFolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<script src="https://kit.fontawesome.com/8 d0d6b5845.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Other CSS stylesheets -->
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+	
+	<!-- <link rel="stylesheet" href="./styles.css"> -->
+	<style>
+        .active-tab{
+    color: #404040 !important;
+    background-color: #fff !important;
+}
+
+@media (max-width: 768px) {
+    .profile_btn_container{
+        top: 0%;
+    }
+    .profile_btn_container button{
+        font-size: 21px !important;
+    }
+    .skill_btn_container{
+        top: 0%;
+    }
+    .skill_btn_container button{
+        font-size: 21px !important;
+    }
+    .portfolio_btn_container{
+        bottom: 0%;
+    }
+    .portfolio_btn_container button{
+        font-size: 21px !important;
+    }
+    .contact_btn_container{
+        bottom: 0%;
+    }
+    .contact_btn_container button{
+        font-size: 21px !important;
+    }
+    .no-overflow{
+        overflow-x: hidden !important;
+        overflow-y: scroll !important;
+    }
+    
+}
+
+@media (min-width: 768px) {
+    .profile_btn_container{
+        top: 15%;
+        /* left: -1%; */
+    }
+    .skill_btn_container{
+        top: 15%;
+        /* right: -2%; */
+    }
+    .portfolio_btn_container{
+        bottom: 15%;
+        /* left: -2%; */
+    }
+    .contact_btn_container{
+        bottom: 15%;
+        /* right: -2%; */
+    }
+    .no-overflow{
+        overflow-x: hidden !important;
+        overflow-y: scroll !important;
+    }
+    
+}
+@media (min-width: 992px) {
+    .profile_btn_container{
+        top: 0%;
+        /* left: -2%; */
+    }
+    .skill_btn_container{
+        top: 0%;
+        /* right: -2%; */
+    }
+    .portfolio_btn_container{
+        bottom: 0%;
+        /* left: -2%; */
+    }
+    .contact_btn_container{
+        bottom: 0%;
+        /* right: -2%; */
+    }
+    .no-overflow{
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+    }
+    
+}
+.example_e:hover {
+    color: #404040 !important;
+    font-weight: 700 !important;
+    letter-spacing: 3px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -5px #ffffff91;
+    -moz-box-shadow: 0px 5px 40px -5px #ffffff91;
+    transition: all 0.3s ease 0s;
+}
+.example_e {
+    border: none;
+    background: #404040;
+    color: #ffffff ;
+    font-weight: 100;
+    /* padding: 20px; */
+    text-transform: uppercase;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+.tab-heading{
+    display: block;
+    font-size: 45px;
+    text-shadow: 2px 2px 13px #FFFFFF;
+}
+
+
+.profile_container .jumbotron{
+    -webkit-box-shadow: 0px 0px 25px 0px #fff; 
+    box-shadow: 0px 0px 25px 0px #fff;
+}
+
+@media (max-width: 416px) {
+    .profile_container .jumbotron{
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    .profile_container .jumbotron h1{
+        font-size: 1.2rem !important;
+    }
+    .profile_container .jumbotron p.lead{
+        font-size: 0.9rem !important;
+        margin-bottom: 0.5rem;
+    }
+    hr{
+        margin-top: 0.1rem !important;
+    }
+    .profile_container .jumbotron p.services{
+        font-size: 0.8rem !important;
+    }
+    .profile_container .jumbotron button{
+        padding: 10px 10px;
+        font-size: 0.7rem;
+    }
+
+}
+
+@media (max-width: 768px){
+    .profile_container .jumbotron{
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+    .profile_container .jumbotron h1{
+        font-size: 1.9rem;
+    }
+    .profile_container .jumbotron p.lead{
+        font-size: 1rem;
+    }
+}
+
+.profile_container .jumbotron p.lead{
+    text-align: end;
+}
+.profile_btn_container{
+    position: fixed;
+    left: -30px;
+    /* border: 2px solid #000; */
+    border-radius: 8000px;
+}
+.profile_btn_container button {
+    background-color: #28A745;
+    padding: 10px 40px;
+    border-radius: 500px;
+    text-align: center;
+    font-size: 25px;
+}
+.profile_btn_container button:hover{
+    background-color: #fff;
+}
+.skill_btn_container{
+    position: fixed;
+    right: -30px;
+    /* border: 2px solid #000; */
+    border-radius: 8000px;
+}
+.skill_btn_container button {
+    background-color: #17A2B8;
+    padding: 10px 40px;
+    border-radius: 500px;
+    text-align: center;
+    font-size: 25px;
+}
+.skill_btn_container button:hover{
+    background-color: #fff;
+}
+.portfolio_btn_container{
+    position: fixed;
+    left: -30px;
+    /* border: 2px solid #000; */
+    border-radius: 8000px;
+}
+.portfolio_btn_container button {
+    background-color: #FFC107;
+    padding: 10px 20px 10px 40px;
+    border-radius: 500px;
+    text-align: center;
+    font-size: 25px;
+}
+.portfolio_btn_container button:hover{
+    background-color: #fff;
+}
+.contact_btn_container{
+    position: fixed;
+    right: -30px;
+    /* border: 2px solid #000; */
+    border-radius: 8000px;
+}
+.contact_btn_container button {
+    background-color: #dc3545;
+    padding: 10px 40px;
+    border-radius: 500px;
+    text-align: center;
+    font-size: 25px;
+}
+.contact_btn_container button:hover{
+    background-color: #fff;
+}
+
+#showNext-btn i{
+    margin-left: 10px;
+}
+
+/* Skill CSS */
+.progress {
+    position: relative;
+    height: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.progress > .progress-type {
+	position: absolute;
+	left: 0px;
+	font-weight: 800;
+	padding: 3px 30px 2px 10px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(25, 25, 25, 0.2);
+}
+.progress > .progress-completed {
+	position: absolute;
+	right: 0px;
+	font-weight: 800;
+	padding: 3px 10px 2px;
+}
+
+/* Portfolio CSS */
+.portfolio_container .card p .primary-text{
+    font-weight: 600;
+}
+.portfolio_container .card p .secondary-text{
+    font-weight: 600;
+}
+.card-img-overlay{
+    color: #1f2325;
+}
+.portfolio_container .card{
+    -webkit-box-shadow: 0px 10px 12px 0px #ffffff91 !important;
+    -moz-box-shadow: 0px 10px 12px 0px #ffffff91 !important;
+}
+
+
+.card-container {
+    position: relative;
+    /* width: 50%; */
+  }
+  
+  .image {
+    opacity: 1;
+    /* display: block; */
+    /* width: 18rem;
+    height: auto; */
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .card-container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .card-container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+/* Contact CSS */
+
+.form-note{
+    /* margin-right: 50px; */
+    margin-left: 50px;
+    margin-top: 0.5rem;
+    color: #a38918;
+    /* letter-spacing: 0.0em; */
+    text-align: end;
+    line-height:2em;
+    font-family: 'Dancing Script', cursive;
+    font-size:45px;
+}
+
+body{
+    background-color: #343a40;
+}
+.contact{
+    padding: 4%; 
+    height: 400px; 
+}
+.col-md-3{
+    background: #ff9b00;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+.contact-info{
+    margin-top:10%;
+}
+.contact-info img{
+    margin-bottom: 15%;
+}
+.contact-info h2{
+    margin-bottom: 10%;
+}
+.contact-info p{
+    margin-top: 30%;
+    font-size: 14px;
+}
+.col-md-9{
+    background: #fff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+.contact-form label{
+    font-weight:600;
+}
+.contact-form button{
+    background: #25274d;
+    color: #fff;
+    font-weight: 600;
+    width: 25%;
+}
+.contact-form button:focus{
+    box-shadow:none;
+}
+
+.contact_container .row{
+    -webkit-box-shadow: 0px 0px 15px 5px #fff; 
+    box-shadow: 0px 0px 12px 5px #fff;
+}
+
+@media (max-width: 450px){
+    .contact_container{
+        top: 0;
+    }
+    .skill_container{
+        padding-top: 30px;
+    }
+
+    .portfolio_container .card-deck{
+        padding-top: 200px;
+    }
+    .contact_container .row{
+        
+        padding-bottom: 50px;
+    }
+
+    .contact{
+        margin-top: 200px;
+        padding: 0 4%; 
+        height: auto; 
+    }
+}
+
+.btn-holder{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+	</style>
+  </head>
+  <body >
+    
+    <div class="d-flex flex-md-row flex-column justify-content-center bg-dark" style="height: 100vh; ">
+        <!-- <span style="font-size:30px;cursor:pointer;position: sticky; top:0; left: 0;" class="d-block d-md-none" onclick="openNav()">&#9776; open</span> -->
+        <div class="profile_container mt-auto mb-0 mb-md-auto flex-column align-items-center">  
+            <div class="jumbotron m-auto position-relative">
+                <h1 class="display-4 position-relative text-center"><i class="fa fa-angle-left" aria-hidden="true"></i> Hello, I'm <span class="highlight">Amit Nemade</span> <i class="fa fa-angle-right" aria-hidden="true"></i></h1>
+                <p class="lead position-relative text-end">I'm a full-stack developer.</p>
+                <hr class="mb-2 position-relative">
+                <p class="position-relative services justify-content-between" style="text-align: center;"><i class="fab fa-superpowers mr-3">Web Development</i><i class="fab fa-superpowers mr-3">Web Maintenance</i><i class="fab fa-superpowers mr-3">SEO</i><i class="fab fa-superpowers mr-3">Digital Marketing</i></p>
+                <div class=" d-flex">
+                  <button id="showNext-btn" class="button btn btn-dark m-auto mr-1 position-relative" onclick="showNext(2)">View my skills<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                  <button id="showNext-btn" class="button btn btn-dark ml-1 m-auto position-relative" onclick="showNext(3)">View my work<i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                  <!-- <div class="button m-auto position-relative " dest="about">View my work <i class="mdi mdi-arrow-right"></i></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container my-auto flex-column col-9 col-md-6 skill_container">
+			<h1 class="mb-5 tab-heading">What I Know?</h1>
+            <div class="progress">
+                <div class="progress-bar bg-primary" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                <div class="progress-bar progress-bar-striped  bg-primary" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">
+                    <span class="d-flex justify-content-between px-5"><span>  </span><span>50%</span></span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                    <span class="d-flex justify-content-between px-5"><span></span><span>60%</span></span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                    <span class="d-flex justify-content-between px-5"><span></span><span>70%</span></span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">PHP</div>
+                <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                    <span class="d-flex justify-content-between px-5"><span></span><span>80%</span></span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">Web Animations</div>
+                <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <span class="d-flex justify-content-between px-5"><span></span><span>90%</span></span>
+                </div>
+            </div>
+            <div class="mt-5 ">
+				<p style="text-align: end; color: azure;">Check my work 	
+					<a href="#" class="ml-3 btn btn-outline-light" onclick="showNext(3)">Here <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+				</p>
+            </div>
+            
+        </div>
+
+        <div class="d-flex flex-column flex-md-row my-auto">
+            <div class="portfolio_container mx-auto mb-5 flex-row flex-md-column justify-content-center container">
+                <h1 class="tab-heading">What I Did?</h1>
+                <div class="d-flex flex-column card-deck flex-md-row pb-3 justify-content-around ">
+                    <div class="card card-container mt-3 mt-md-0">
+                        <img src="./eventblizz-laptop.jpg" alt="Avatar"  class="card-img image">
+                        <div class="middle pt-3">
+                            <h5 class="card-title">Web Developer <span style="font-size: 15px;"> @EventBlizz </span></h5>
+                            <p class="card-text ">
+                                <!-- <span class="primary-text">Company</span><span class="secondary-text">: Eventblizz</span> <br> -->
+                                <span class="primary-text">Skills used:</span><span class="secondary-text">: HTML, CSS, JS</span> <br>
+                                <span class="primary-text">Duration</span><span class="secondary-text">: 3mons</span>
+                            </p>
+                            <div class="card-body pt-0">
+                                <a href="#" class="btn btn-outline-dark">Preview <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-container mt-3 mt-md-0">
+                        <img src="./feedback_rgit.png" alt="Avatar"  class="card-img image">
+                        <div class="middle pt-3">
+                            <h5 class="card-title">Web Developer <span style="font-size: 15px;"> #MyProject </span></h5>
+                            <p class="card-text ">
+                                <!-- <span class="primary-text">Company</span><span class="secondary-text">: Eventblizz</span> <br> -->
+                                <span class="primary-text">Skills used:</span><span class="secondary-text">: HTML, CSS, JS</span> <br>
+                                <span class="primary-text">Duration</span><span class="secondary-text">: 3mons</span>
+                            </p>
+                            <div class="card-body pt-0">
+                                <a href="#" class="btn btn-outline-dark">Preview <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-container mt-3 mt-md-0">
+                        <img src="./portfolio.png" alt="Avatar"  class="card-img image">
+                        <div class="middle pt-3">
+                            <h5 class="card-title">Web Developer <span style="font-size: 15px;"> #MyProject </span></h5>
+                            <p class="card-text ">
+                                <!-- <span class="primary-text">Company</span><span class="secondary-text">: Eventblizz</span> <br> -->
+                                <span class="primary-text">Skills used:</span><span class="secondary-text">: HTML, CSS, JS</span> <br>
+                                <span class="primary-text">Duration</span><span class="secondary-text">: 3mons</span>
+                            </p>
+                            <div class="card-body pt-0">
+                                <a href="#" class="btn btn-outline-dark">Preview <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-md-5 pt-md-5">
+                    <p style="text-align: end; color: azure;">Any suggestion, or want me to work on your project, Contact me
+                        <a href="#" class="ml-3 btn btn-outline-light"  onclick="showNext(4)">Here <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="contact_container container contact">
+            <div class="row ">
+                <div class="col-md-3">
+                    <div class="contact-info">
+                        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
+                        <h2>Ping Me</h2>
+                        <h4>I'd love to hear from you !</h4>
+                        <p>Whether you have a question about my work, services, pricing, need a quote, or anything else, I am ready to answer all your questions</p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="contact-form">
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="fname">First Name:</label>
+                          <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="lname">Last Name:</label>
+                          <div class="col-sm-10">          
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="email">Email:</label>
+                          <div class="col-sm-10">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-sm-2" for="comment">Comment:</label>
+                          <div class="col-sm-10">
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                          </div>
+                        </div>
+                        <div class="form-group">        
+                          <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+        <div class="profile_btn_container">
+            <button id="profile-btn" class="example_e "> Profile </button>
+        </div>
+        <div class="skill_btn_container">
+            <button id="skills-btn" class="example_e"> My Skills </button>
+        </div>
+        <div class="portfolio_btn_container">
+            <button id="portfolio-btn" class="example_e"> Portfolio </button>
+        </div>
+        <div class="contact_btn_container">
+            <button id="contact-btn" class="example_e">Contact Me</button>
+        </div>
+
+
+	<!-- <div class="button_cont" align="center">
+		<a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">Add Call to Action</a>
+	</div> -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script src="./script.js" type="text/javascript"></script>
+  
+<script>
+    
+$(document).ready(function(){
+$(".profile_container").show();
+$(".skill_container").hide();
+$(".portfolio_container").hide();
+$(".contact_container").hide();
+setActiveTab('#profile-btn')
+
+console.log('connected');
+
+$("#profile-btn").click(function() {
+setActiveTab('#profile-btn')
+console.log('Profile clicked');
+$(".profile_container").show();
+$(".skill_container").hide();
+$(".portfolio_container").hide();
+$(".contact_container").hide();
+})
+
+$("#skills-btn").click(function() {
+setActiveTab('#skills-btn')
+console.log('Skills clicked');
+$(".profile_container").hide();
+$(".skill_container").show();
+$(".portfolio_container").hide();
+$(".contact_container").hide();
+})
+
+$("#portfolio-btn").click(function() {
+setActiveTab('#portfolio-btn')
+console.log('Portfolio clicked');
+$(".profile_container").hide();
+$(".skill_container").hide();
+$(".portfolio_container").show();
+$(".contact_container").hide();
+})
+
+$("#contact-btn").click(function() {
+setActiveTab('#contact-btn')
+console.log('Contact clicked');
+$(".profile_container").hide();
+$(".skill_container").hide();
+$(".portfolio_container").hide();
+$(".contact_container").show();
+})
+
+})
+function setActiveTab(id){
+console.log(id+' recieved')
+$(".active-tab").removeClass("active-tab")
+$(id).addClass("active-tab")
+}
+
+function showNext(i){
+console.log('reached shownext ' + i)
+switch(i){
+case 2:         
+    setActiveTab('#skills-btn')
+    console.log('Skills clicked');
+    $(".profile_container").hide();
+    $(".skill_container").show();
+    $(".portfolio_container").hide();
+    $(".contact_container").hide();
+    break;
+case 3:
+    setActiveTab('#portfolio-btn')
+    console.log('Portfolio clicked');
+    $(".profile_container").hide();
+    $(".skill_container").hide();
+    $(".portfolio_container").show();
+    $(".contact_container").hide();
+    break;
+case 4: 
+    setActiveTab('#contact-btn')
+    console.log('Contact clicked');
+    $(".profile_container").hide();
+    $(".skill_container").hide();
+    $(".portfolio_container").hide();
+    $(".contact_container").show();
+    break;
+default:
+    console.log('error while switching tab from js')
+}
+}
+
+</script>
+  </body>
+</html>
